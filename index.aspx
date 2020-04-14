@@ -20,7 +20,9 @@
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                  <a class="navbar-log" href="login.aspx">Login/Register</a>                
+                 <!-- <a class="navbar-log" href="login.aspx">Login/Register</a>         --> 
+                    <asp:Button ID="Button2" runat="server" Text="Login/Register" OnClick="Button2_Click" class="btn btn-secondary btn-lg"/>
+                    <asp:Button ID="Button1" runat="server" Text="SignOut" class="btn btn-secondary btn-lg"  onclick="Button1_Click"/>
                   <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                       <a class="nav-link" href="index.aspx">Home </a>
@@ -68,8 +70,7 @@
           </div>
         </div>    
         <div class="gap">
-              <asp:Label ID="Label19" runat="server" class="pers"></asp:Label>
-              <asp:Button ID="Button1" runat="server" Text="SignOut" class="btn btn-secondary btn-lg"  onclick="Button1_Click"/>
+              <asp:Label ID="Label19" runat="server" class="pers" Style="text-align:center"></asp:Label>              
           </div>
         <div class="act">
           <h1>ACTIVITY</h1>
@@ -133,7 +134,26 @@
               </div>              
             </div>                       
           </div>          
-        </div>                        
+        </div>            
+            <br />
+        <div class="act">
+          <h1>OUR LOCATION</h1>
+        </div>
+        <br />
+        <div class="Events-pics">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.4572490885935!2d-78.85803398448402!3d35.78870648016933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89aced9e130ddc89%3A0x6c3a6e304c0fd15c!2s434%20Drystack%20Way%2C%20Cary%2C%20NC%2027519%2C%20USA!5e0!3m2!1sen!2s!4v1586795541544!5m2!1sen!2s" 
+                width="100%" 
+                height="500px"                
+                frameborder="0" 
+                style="border:0;" 
+                allowfullscreen="" 
+                aria-hidden="false" 
+                style="position:absolute; top:0; left: 0"
+                tabindex="0">
+            </iframe>
+        </div>
+        <br />
         <div class="gap"></div>              
         <div class="footer">
           <p>All Rights Reserved copy Rights &copy; 2020 superchilddaycare.com<p>
